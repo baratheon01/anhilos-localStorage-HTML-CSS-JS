@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>anhilos</title>
+  </head>
+  <body>
+    <div class="c-principal">
+      <div id="container" class="contenedor grid c1">
+        <div class="calculadora" id="calculadoraTot">
+          <form>
+            <h2>Hilo</h2>
+  
+            <label>ingresa el valor hilo</label
+            ><input type="text" id="valorHilo" class="form-control" />
+            <label>Metros de hilo</label
+            ><input type="text" id="metroHilo" class="form-control" />
+            <label>Hilo gastado</label
+            ><input type="text" id="hiloGastado" class="form-control" />
+  
+            <h2>Tela</h2>
+  
+            <label>ingresa valor de la tela</label
+            ><input type="text" id="valorTela" class="form-control" />
+            <label>Metros de tela</label
+            ><input type="text" id="metroTela" class="form-control" />
+            <label>Tela gastada</label
+            ><input type="text" id="telaGastada" class="form-control" />
+  
+            <h2>Materiales</h2>
+            <label>costo marco</label
+            ><input type="text" id="valorMarco" class="form-control" />
+            <label>costo cajas</label
+            ><input type="text" id="valorCajas" class="form-control" />
+  
+            <h2>Horas Trabajadas</h2>
+            <label>ingresa horas trabajadas</label
+            ><input type="text" id="valorHora" class="form-control" />
+  
+            <div class="p" id="p"></div>
+            <div class="button-div">
+              <button type="button" class="btn btn-primary" id="btnHilo">
+                calcular
+              </button>
+            </div>
+          </form>
+          <div id="valorTotal" class="valor-total"></div>
+        </div>
+      </div>
+      <div class="contenedor grid">
+        <div class="nombre-valor">
+          <form class="form-save">
+            <h2>Info para guardar</h2>
+            <label>Nombre del producto</label
+            ><input type="text" id="nombreProducto" class="form-control" />
+            <label>costo de el producto</label
+            ><input type="text" id="costoProducto" class="form-control" />
+            <div class="button-div">
+              <button type="button" class="btn btn-primary" id="btnSave">
+                Guardar
+              </button>
+            </div>
+          </form>
+          <div class="lista-items" id="listItems">
+            <table id="tableItems" class="table table-bordered table-success">
+  
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+   
+    <script src="app.js"></script>
+  </body>
+</html>
