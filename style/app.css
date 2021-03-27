@@ -52,6 +52,15 @@ html {
   text-align: center;
 }
 
+.form-calculator{
+    padding: 20px;
+}
+@media(min-width: 768) {
+    .form-calculator{
+        padding: 0;
+    }
+}
+
 .btn{
   padding: 20px;
   text-transform: uppercase;
