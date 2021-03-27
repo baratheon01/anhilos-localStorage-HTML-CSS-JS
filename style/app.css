@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*Gobal*/
+.c-principal{
+  background-color: #FFDBC9;
+}
+
+.contenedor{
+    max-width: 1300px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.c1{
+  background-color: #DFACE8;
+  border-radius: 20px;
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+}
+
+.calculadora{
+  grid-column: 1/-1;
+}
+.nombre-valor{
+  grid-column: 1/-1;
+  margin-top: 3rem;
+}
+
+@media(min-width: 768px) {
+  .contenedor{
+    width: 60%;
+  }
+  .calculadora{
+    grid-column: 3/5;
+  }
+  .nombre-valor{
+    grid-column: 3/5;
+  }
+}
+.button-div{
+  text-align: center;
+}
+
+.btn{
+  padding: 20px;
+  text-transform: uppercase;
+  margin: 2px 2px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-precio-total{
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
